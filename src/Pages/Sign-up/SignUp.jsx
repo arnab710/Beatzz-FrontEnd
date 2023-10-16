@@ -29,8 +29,6 @@ const SignUp = () => {
 		setErr("");
 		if (passID !== confirmPass) return setErr("The password confirmation does not match");
 		if (passID.length < 8) return setErr("Password must be atleast 8 characters long");
-		const passwordValidator = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-		if (!passwordValidator.test(passID)) return setErr("Password must have at least one uppercase letter, one lowercase letter, one digit, and one special character");
 
 		mutate({ email: emailID.current, name: userName.current, password: passID, confirmpassword: confirmPass });
 	};
