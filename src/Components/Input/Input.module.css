@@ -1,0 +1,59 @@
+.SpecificInput
+{
+       background: rgba(255, 255, 255, 0.15);
+       border-radius: 35px;
+       width: 100%;
+       display: flex;
+       gap: 1rem;
+       /* border: 2px solid red; */
+}
+.SpecificInput>span {
+       /* border: 2px solid yellowgreen; */
+       width: 10%;
+       padding: 18px 0px 0px 10px;
+       line-height: 1.2rem;
+       color: rgba(150, 248, 248, 0.747);
+}
+.SpecificInput span svg {
+       /* border: 2px solid red; */
+       height: 21px;
+       width: 21px;
+}
+.SpecificInput:focus-within > span > svg
+{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+   
+
+.input {
+       font-family: 'Roboto', sans-serif;
+       padding: 14px 12px 14px 0px;
+       letter-spacing: 3px;
+       font-size: 1.3rem;
+       font-weight: 300;
+       border: none;
+       background: transparent;
+       color: #fff;
+       outline: none;
+       line-height: 2rem;
+       width: 90%;
+       /* border: 2px solid red; */
+}
+
+.input::placeholder {
+       color: rgba(255, 255, 255, 0.707);
+}
+.input:-webkit-autofill {
+       -webkit-text-fill-color: #fff;
+       background: transparent!important;
+       transition: background 10000s ease-in-out 0s;
+}
+.showpass{
+       margin-right: 10px;
+}
+.showpass svg{
+       color: rgba(150, 248, 248, 0.348);
+       height:23px !important;
+       width: 23px !important;
+}

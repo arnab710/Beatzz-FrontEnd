@@ -1,0 +1,412 @@
+.bodyMain{
+       width: 95%;
+       margin: 80px auto 50vh auto;
+       overflow-x: hidden;
+       /* border: 2px solid red; */
+}
+.cartHead{
+       font-size: 3rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 700;
+       border-bottom: 1.6px solid rgba(0, 0, 0, 0.208);
+       height: 120px;
+       color:rgba(19, 185, 185, 0.733);
+}
+.noCartMargin{
+       display: none;
+}
+.body2{
+       display: flex;
+       justify-content: space-between;
+}
+.cartList{
+       display: flex;
+       flex-direction: column;
+       margin-top: 40px;
+       width: 65%;
+}
+.eachItem{
+       display: flex;
+       justify-content: space-between;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.208);
+       height: 180px;
+       align-items: center;
+}
+.eachItem:last-child{
+       border-bottom: none;
+}
+.productNameDiv{
+       /* border: 2px solid green; */
+       width: 30%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       color: black;
+}
+.itemImgDiv{
+       width: 40%;
+       /* border: 2px solid red; */
+}
+.itemImg{
+       width: 100%;
+}
+.itemTitle{
+       font-size: 1.5rem;
+       width: 50%;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+       /* border: 2px solid red; */
+}
+.eachPrice{
+       font-size: 1.2rem;
+       font-family: "Inter",sans-serif;
+       font-weight: 400;
+}
+.productQuantityBtn{
+       width: 80px;
+       /* border: 2px solid red; */
+       height: 17%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+}
+.minusBtn,.plusBtn{
+       outline: none;
+       border: none;
+       width: 30%;
+       height: 100%;
+       font-size: 1.3rem;
+}
+.totalPrice{
+       font-size: 1.2rem;
+       font-family: "Inter",sans-serif;
+       font-weight: 700;
+}
+.Summary{
+       width: 30%;
+}
+.SummaryMainDiv{
+       /* border: 2px solid red; */
+       width:90%;
+       margin: 10px auto 0 auto;
+       background-color: white;
+       height: 370px;
+}
+.SummaryTitle{
+       /* margin-top: 20px; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 2.5rem;
+       font-weight: 700;
+       height: 100px;
+       border-bottom: 1.5px solid rgba(0, 0, 0, 0.208);
+       font-family: "Inter",sans-serif;
+       color:rgba(19, 185, 185, 0.733);
+}
+.priceIndex{
+       /* border: 2px solid red; */
+       margin: 40px auto 0 auto;
+       display: flex;
+       flex-direction: column;
+       row-gap: 20px;
+       width: 80%;
+       height: 90px;
+       border-bottom: 1.5px solid rgba(0, 0, 0, 0.208);
+}
+.priceProducts{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       /* border: 2px solid green; */
+       font-size: 1.2rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 400;
+       align-items: center;
+}
+.priceSpan{
+       font-weight: 600;
+}
+.allTotalPriceDiv{
+       width: 80%;
+       margin: 20px auto 0 auto;
+       display: flex;
+       justify-content: space-between;
+       font-size: 1.2rem;
+       font-family: "Inter",sans-serif;
+       font-weight: 600;
+}
+.checkOutBtn{
+       display: block;
+       margin: 30px auto 0 auto;
+       width: 60%;
+       height: 40px;
+       border-radius: 25px;
+       outline: none;
+       border: none;
+       font-size: 1.2rem;
+       font-weight: 600;
+       color:white;
+       font-family: 'Inter',sans-serif;
+       background-color:rgba(13, 168, 168, 0.581);
+       transition: 0.3s;
+}
+.continueShopping{
+       /* border: 2px solid red; */
+       position: absolute;
+       font-size: 1.2rem;
+       font-family: 'Inter',sans-serif;
+       color:rgb(14, 173, 173);
+       font-weight: 600;
+}
+.checkOutBtn:hover{
+       background-color: rgba(18, 155, 155, 0.663);
+}
+.emptyCartImgDiv{
+       margin-top: 100px;
+       /* border: 2px solid red; */
+}
+.emptyCartImg{
+       display: block;
+       margin: auto;
+}
+.emptyCartText{
+       text-align: center;
+       font-family: 'kalam',cursive;
+}
+.emptyCartBtn{
+       display: block;
+       width: 200px;
+       height: 49px;
+       margin: 10px auto 0px auto;
+       font-size: 1.1rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 400;
+       outline: none;
+       border: none;
+       background-color: rgba(17, 184, 184, 0.768);
+       color: white;
+       border-radius: 25px;
+       transition: 0.3s;
+}
+.emptyCartBtn:hover{
+       background-color: rgba(14, 147, 147, 0.768);
+}
+@media screen and (max-width : 1256px){
+       .bodyMain{
+              width: 97%;
+       }
+}
+@media screen and (max-width : 1203px){
+       .SummaryMainDiv{
+              width: 95%;
+       }
+}
+@media screen and (max-width : 1135px){
+       .checkOutBtn{
+              width: 70%;
+       }
+}
+@media screen and (max-width : 1095px) {
+       .itemTitle{
+              font-size: 1.3rem;
+       }
+}
+@media screen and (max-width :1028px){
+       .itemTitle{
+              font-size: 1.1rem;
+       }
+}
+@media screen and (max-width :1042px){
+       .priceSpan,.allTotalPrice{
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width :950px){
+       .SummaryMainDiv{
+              width: 97%;
+       }
+       .checkOutBtn{
+              width: 80%;
+       }
+}
+@media screen and (max-width : 912px){
+       .bodyMain{
+              width: 80%;
+       }
+       .body2{
+              display: block;
+       }
+       .cartList{
+              width: 100%;
+       }
+       .Summary{
+              width: 100%;
+       }
+       .priceProducts{
+              font-size: 1.4rem;
+       }
+       .priceSpan{
+              font-size: 1.3rem;
+       }
+       .allTotalPriceName{
+              font-size: 1.4rem;
+       }
+       .allTotalPrice{
+              font-size: 1.3rem;
+       }
+}
+@media screen and (max-width :745px){
+       .bodyMain{
+              width: 90%;
+       }
+}
+@media screen and (max-width : 641px){
+       .bodyMain{
+              width: 95%;
+       }
+       .eachPrice,.totalPrice{
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width : 590px){
+       .itemTitle{
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width : 549px){
+       .productNameDiv{
+              justify-content: initial;
+              gap: 2%;
+       }      
+}
+@media screen and (max-width :504px){
+       .bodyMain{
+              width: 98%;
+       }
+       .eachPrice,.totalPrice{
+              font-size: 0.9rem;
+       }
+}
+@media screen and (max-width : 486px){
+       .eachPrice{
+              display: none;
+       }
+}
+@media screen and (max-width :412px){
+       .priceProducts{
+              font-size: 1.3rem;
+       }
+       .priceSpan{
+              font-size: 1.2rem;
+       }
+       .allTotalPriceName{
+              font-size: 1.3rem;
+       }
+       .allTotalPrice{
+              font-size: 1.2rem;
+       }
+}
+@media screen and (max-width : 392px) {
+       .itemTitle{
+              font-size: 0.9rem;
+       }
+       .productNameDiv{
+              gap:1%;
+       }
+}
+@media screen and (max-width :386px){
+       .cartHead{
+              font-size: 2.7rem;
+       }
+}
+@media screen and (max-width : 370px){
+       .priceProducts{
+              font-size: 1.2rem;
+       }
+       .priceSpan{
+              font-size: 1.1rem;
+       }
+       .allTotalPriceName{
+              font-size: 1.2rem;
+       }
+       .allTotalPrice{
+              font-size: 1.1rem;
+       }
+}
+@media screen and (max-width : 355px){
+       .itemTitle{
+              font-size: 0.8rem;
+       }
+}
+@media screen and (max-width :339px){
+       .productQuantityBtn{
+              width: 15%;
+       }
+       .totalPrice{
+              font-size: 0.8rem;
+       }
+}
+@media screen and (max-width : 331px){
+       .emptyCartImg{
+              width: 80%;
+       }
+       .emptyCartText{
+              font-size: 1.5rem;
+       }
+       .emptyCartBtn{
+              width: 170px;
+              height: 49px;
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width : 324px){
+       .cartHead{
+              font-size: 2.4rem;
+       }
+}
+@media screen and (max-width : 298px){
+       .priceProducts{
+              font-size: 1.1rem;
+       }
+       .priceSpan{
+              font-size: 1rem;
+       }
+       .allTotalPriceName{
+              font-size: 1.1rem;
+       }
+       .allTotalPrice{
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width : 292px){
+       .productQuantityBtn{
+              margin-left: 20px;
+       }
+}
+@media screen and (max-width : 286px){
+       .cartHead{
+              font-size: 2rem;
+       }
+}
+@media screen and (max-width : 271px){
+       .productQuantityBtn{
+              margin-left: 30px;
+       }
+}
+@media screen and (max-width :263px) {
+       .priceProducts{
+              font-size: 1rem;
+       }
+       .priceSpan{
+              font-size: 0.9rem;
+       }
+       .allTotalPriceName{
+              font-size: 1rem;
+       }
+       .allTotalPrice{
+              font-size: 0.9rem;
+       }
+}

@@ -1,0 +1,339 @@
+.background {
+       /* background-color: rgba(151, 144, 144, 0.749); */
+       background-color: transparent;
+       color: rgba(255, 255, 255, 0.73);
+       /* border: 2px solid red; */
+       width: 100%;
+       position:absolute;
+       /* height: 70px; */
+       z-index: 10;
+       /* position: fixed; */
+       top:0px;
+       height: 100px;
+}
+li a{
+       transition: 0.2s ease-in-out;
+       color:rgba(255, 255, 255, 0.73);
+       cursor: pointer;
+}
+li a:hover{
+       color: rgb(24, 239, 239);
+}
+
+.background a {
+       color: rgba(255, 255, 255, 0.797);
+}
+
+.navContents {
+       padding: 32px 2px;
+       display: flex;
+       /* border: 2px solid red; */
+       justify-content: space-around;
+}
+
+.logo {
+       display: flex;
+       gap: 0.5rem;
+       /* border: 2px solid red; */
+}
+
+.logo>img {
+       width: 2rem;
+
+}
+
+.logo>span {
+       color: rgb(255, 255, 255);
+       font-family: 'Inter', sans-serif;
+       letter-spacing: 1px;
+       /* border: 2px solid red; */
+       padding-top: 3.5px;
+       font-size: 1.4rem;
+}
+
+.links {
+       display: flex;
+       /* border: 2px solid blue; */
+       gap: 3rem;
+       padding-top: 4.3px;
+}
+
+.links>li {
+       font-family: 'Inter', sans-serif;
+       font-size: 18px;
+       font-weight: 400;
+}
+
+.profile {
+       display: flex;
+       /* border: 2px solid red; */
+       gap: 1rem;
+       align-items: center;
+}
+
+.profile li>svg {
+       height: 20px;
+       width: 20px;
+       transition: 0.2s ease-in-out;
+}
+.profile li svg:hover{
+       color: rgb(24, 239, 239);
+}
+
+.user {
+       display: flex;
+       gap: 0.3rem;
+       transition: 0.2s ease-in-out;
+}
+.user:hover{
+       color: rgb(24, 239, 239);
+}
+
+.userName {
+       font-family: 'Inter', sans-serif;
+       font-weight: 400;
+}
+
+.about {
+       position: relative;
+}
+.icons{
+       position: relative;
+}
+.icons svg {
+       position: absolute;
+       /* border: 2px solid red; */
+       top: 3px;
+       left: 1.4px;
+}
+.dropMenu {
+       display: flex;
+       position: absolute;
+       visibility: hidden;
+       flex-direction: column;
+       background-color: rgba(0, 0, 0, 0.749);
+       top: 28px;
+       left:1px;
+       min-width: 14rem;
+       row-gap: 8px;       
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+       opacity: 0;
+       transform: translateY(-50px); 
+       transition: all 0.5s ease;
+       transition-property: visibility, opacity, transform;
+}
+.userData{
+       position: relative;
+}
+.userDataList{
+       display: flex;
+       position: absolute;
+       visibility: hidden;
+       flex-direction: column;
+       background-color: rgba(0, 0, 0, 0.749);
+       top: 24px;
+       left:-45px;
+       min-width: 8rem;
+       row-gap: 8px;       
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+       opacity: 0;
+       transform: translateY(-50px); 
+       transition: all 0.5s ease;
+       transition-property: visibility, opacity, transform;
+       font-family: "Inter",sans-serif;
+}
+.userData:hover .userDataList{
+       visibility: visible;
+       opacity: 1; 
+       transform: translateY(0); 
+}
+.dropMenu li,.userDataList li{
+       padding: 10px;
+       border-bottom: 1px dotted white;
+}
+.dropMenu li:last-child,.userDataList li:last-child {
+       border-bottom: 0; 
+     }
+
+.dropMenu a,.userDataList a{
+       color:rgba(255, 255, 255, 0.478);
+}
+.about:hover .dropMenu{
+       visibility: visible;
+       opacity: 1; 
+       transform: translateY(0); 
+}
+.dropIcons span{
+       /* border: 2px solid red; */
+       display: flex;
+       align-items: center;
+       gap:2.5px;
+}
+.cartIcon{
+       position: relative;
+}
+.cartNumber{
+       position: absolute;
+       top: -10px;
+       /* left: 10px; */
+       font-size: 15px;
+       font-family: 'Inter',sans-serif;
+       color:rgba(255, 255, 255, 0.678);  
+}
+.dropIcons svg{
+       /* border: 2px solid red; */
+       margin-top: 0px;
+}
+.hamBurger{
+       display: none;
+       position: relative;
+}
+.about{
+       cursor:pointer;
+       transition: 0.2s ease-in-out;
+}
+.about:hover{
+       color: rgb(24, 239, 239);
+}
+.login{
+       background-color: rgba(29, 186, 186, 0.679);
+       font-family: 'Inter',sans-serif;
+       font-size: 1rem;
+       padding: 7px 0;
+       border-radius: 10px;
+       width: 100px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       transition: 0.2s ease-in-out;
+}
+.login:hover{
+       background-color: rgba(16, 138, 138, 0.679);
+       cursor: pointer;
+}
+.cartNav{
+       position: static;
+       background-color: rgb(0, 0, 0);
+}
+@media screen and (max-width :1026px) {
+       
+       .hamBurger{
+              display: block;
+              font-size: 1.2rem;
+       }
+       .darkBack{
+              background-color: black!important;
+       }
+       .links{
+              flex-direction: column;
+              position: absolute;
+              width: 100%;
+              /* border: 2px solid red; */
+              background-color: rgb(0, 0, 0);
+              row-gap: 12px;
+              top: 67px;
+              left: 0px;
+              visibility: hidden;
+              opacity: 0;
+              transform: translateX(-50px); 
+              transition: all 0.5s ease;
+       }
+       .showNAV{
+              /* background-color: black; */
+              visibility: visible;
+              opacity: 1;
+              transform: translateY(0);
+       }
+       .showNAV .background {
+              background-color: black;
+}
+       .links li{
+              border-bottom: 1px dashed rgba(255, 255, 255, 0.204);
+              padding: 17px;
+              text-align: center;
+       }
+       .dropMenu{
+              position: static;
+              margin-top: 13px;
+              width: 100%;
+              background-color: black;
+              z-index: 2;
+              display: none;
+       }
+       .dropIcons span{
+              display: flex;
+              margin-top: 10px;
+              justify-content: center;
+              align-items: center;
+       }
+       .socialIcon{
+              margin-right: 0.3rem;
+       }
+       .show{
+              display: block;
+              visibility: visible;
+              transform: none;
+              transition: none;
+              opacity: 1;
+       }
+       .navContents{
+              justify-content: space-between;
+       }
+       .logo{
+              margin-left: 2.7rem;
+       }
+       .profile{
+              margin-right: 2.7rem;
+       }
+}
+
+@media screen and (max-width :872px) {
+       .logo{
+              margin-left: 2rem;
+       }
+       .profile{
+              margin-right: 2rem;
+       }
+}
+
+@media screen and (max-width :750px) {
+       .logo{
+              margin-left: 1.5rem;
+       }
+       .profile{
+              margin-right: 1.5rem;
+       }
+}
+
+@media screen and (max-width :657px) {
+       .logo{
+              margin-left: 1.1rem;
+       }
+       .profile{
+              margin-right: 1.1rem;
+       }
+}
+
+@media screen and (max-width :485px) {
+       .logo{
+              margin-left: 0.7rem;
+       }
+       .profile{
+              margin-right: 0.7rem;
+       }
+}
+@media screen and (max-width :340px){
+       .profile{
+              gap:0.5rem;
+       }
+       .login{
+              width: 80px;
+              padding: 4px 0;
+       }
+}
+@media screen and (max-width :289px){
+       .profile{
+              gap:0.3rem;
+              margin-right: 0.4rem;
+       }
+}

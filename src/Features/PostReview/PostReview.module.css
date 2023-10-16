@@ -1,0 +1,80 @@
+.OnLoginReviewSection{
+       /* border: 2px solid black; */
+       background-color: white;
+       width: 50%;
+       padding: 15px 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+.outerRatingDiv{
+       display: flex;
+       flex-direction: column;
+       row-gap: 10px;
+       align-items: flex-start;
+       /* border: 2px solid red; */
+       width: 95%;
+}
+.ReviewHeader{
+       width: 100%;
+       font-size: 1.5rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+       color: rgba(21, 147, 147, 0.849);
+       text-align: center;
+       /* border: 2px solid red; */
+}
+.PostStarRatingDiv{
+       /* border: 2px solid red; */
+       display: flex;
+       flex-direction: column;
+       row-gap: 5px;
+}
+.PostReviewDiv{
+       display: flex;
+       flex-direction: column;
+       row-gap: 8px;
+}
+.PostRatingHeader,.PostReviewHeader{
+       font-size: 0.9rem;
+       font-family: 'Inter',sans-serif;
+}
+.ReviewTextArea{
+       font-family: 'Inter',sans-serif;
+       font-weight: 500;
+       width: 100%;
+       height: 150px;
+       font-size: 16px;
+       border: 1.5px solid rgba(0, 0, 0, 0.579);
+       padding: 5px;
+       letter-spacing: 0.07rem;
+}
+.SubmitBtn{
+       cursor: pointer;
+       font-size: 1.2rem;
+       outline: none;
+       border: none;
+       width: 150px;
+       height: 40px;
+       font-weight: 500;
+       font-family: 'Inter',sans-serif;
+       border-radius: 10px;
+       background-color: rgba(25, 192, 192, 0.804);
+       color: white;
+       transition: 0.3s;
+       /* border: 2px solid green; */
+}
+.SubmitBtn:hover{
+       background-color: rgba(21, 156, 156, 0.804);
+}
+@media screen and (max-width : 1201px){
+       .OnLoginReviewSection{
+              width: 39.5%;
+       }
+}
+@media screen and (max-width : 840px){
+       .OnLoginReviewSection{
+              margin-top: 40px;
+              width: 100%;
+       }
+}

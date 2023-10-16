@@ -1,0 +1,26 @@
+.starContainer{
+       /* border: 2px solid red; */
+       display: flex;
+       gap: 5%;
+}
+.starContainer span{
+       font-size: 1.1rem;
+       font-family: 'Inter', sans-serif;
+       font-weight: 400;
+       color: rgba(12, 194, 194, 0.827);
+
+}
+.iconStyle{
+       display: flex;
+	gap: 0.2rem;
+	align-items: center;
+	justify-content: flex-start;
+}
+.icon{
+       font-size: 1.1rem;
+       color:rgba(14, 183, 183, 0.612);
+}
+.emptyIcon{
+       font-size: 1.3rem;
+       color:rgba(14, 183, 183, 0.612);
+}

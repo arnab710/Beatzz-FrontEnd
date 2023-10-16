@@ -1,0 +1,35 @@
+.divmain{
+       /* border: 2px solid red; */
+       margin: 35vh auto 0 auto;
+       width:fit-content;
+
+}
+.header{
+       text-align: center;
+       font-size: 5rem;
+       font-family: 'Inter',sans-serif;
+       color:rgba(211, 19, 19, 0.762);
+}
+.NotFound{
+       font-size: 3rem;
+       text-align: center;
+       font-family: 'kalam',cursive;
+}
+.Home{
+       margin-top: 30px;
+       display: block;
+       font-size: 1.2rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+       text-align: end;
+       cursor: pointer;
+       color:rgb(16, 171, 171);
+}
+@media screen and (max-width :334px) {
+       .header{
+              font-size: 4.5rem;
+       }
+       .NotFound{
+              font-size: 2.5rem;
+       }
+}

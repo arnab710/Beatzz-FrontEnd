@@ -1,0 +1,204 @@
+.image1{
+       width: 330px;
+       border-bottom-left-radius: 50px;
+}
+.article{
+       /* border: 2px solid black; */
+       opacity: 0;
+       margin-top: 90px;
+       display: flex;
+      justify-content: space-between;
+       height: 480px;
+}
+@keyframes fadeInUp {
+       0% {
+         opacity: 0;
+         transform: translateY(80px);
+       }
+       100% {
+         opacity: 1;
+         transform: translateY(0);
+       }
+} 
+.show{
+       animation: fadeInUp 1s ease-out forwards;
+}
+
+.text1{
+        /* border: 2px solid red;  */
+       max-width: 60%;
+       margin-top: 80px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+}
+.heading::before{
+       background:rgba(10, 201, 201, 0.658);
+         border-radius: 5px;
+         content: "";
+         position: absolute;
+         top: -60px;
+         left: 0;
+         width: 40px;
+         height: 6px;
+       }
+.heading{
+       position: relative;
+       font-size: 3.7rem;
+       color:rgba(14, 206, 206, 0.749);
+       font-family: 'Inter', sans-serif;
+       font-weight: 500;
+}
+.text{
+       font-size: 1.5rem;
+       color:rgba(0, 0, 0, 0.544);
+       font-family: 'Kalam', cursive;
+       font-weight: 500;
+       /* border: 2px solid pink; */
+       width: 100%;
+}
+
+@media screen and (max-width :1008px){
+       .article{
+              display: block;
+              height: initial;
+              margin-top: 50px;
+              /* border: 2px solid green; */
+       }
+       @keyframes fadeInUp {
+              0% {
+                opacity: 0;
+                transform: translateY(40px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateY(0);
+              }
+       }
+       .show{
+              animation: fadeInUp 1s ease-out forwards;
+       } 
+       .text1{
+              max-width: 80%;
+              height: 290px;
+              /* align-items: center; */
+              margin: auto;       
+       }
+       .imgContainer{
+              /* display: block; */
+              margin : 40px auto 0 auto;
+              width: 80%;
+              /* border: 2px solid red; */
+              height: 350px;
+              position: relative;
+              overflow: hidden;
+              border-bottom-left-radius: 50px;
+       }
+       .image1{
+              position: absolute;
+              top: -260px;
+              width: 100%;
+       }
+       .heading::before{
+              display: none;
+       }
+       .article1{
+              display: flex;
+              flex-direction: column-reverse;
+       }
+}
+@media screen and (max-width : 934px){
+       .text1{
+              max-width: 90%;
+       }
+       .imgContainer{
+              width: 90%;
+       }
+       .image1{
+              top: -300px;
+       }
+}
+@media screen and (max-width : 830px){
+       .text1{
+              max-width: 95%;
+       }
+       .imgContainer{
+              width: 95%;
+       }
+       .image1{
+              top: -300px;
+       }
+}
+
+@media screen and (max-width : 787px){
+       .text1{
+              max-width: 100%;
+       }
+       .imgContainer{
+              width: 100%;
+       }
+       .image1{
+              top: -300px;
+       }
+}
+@media screen and (max-width :787px){
+       .heading{
+              font-size: 3.4rem;
+       }
+       .text{
+              font-size: 1.3rem;
+       }
+}
+@media screen and (max-width :689px){
+       .heading{
+              font-size: 3.2rem;
+       }
+}
+@media screen and (max-width :650px){
+       .heading{
+              font-size: 3rem;
+       }
+       .image1{
+              top: -240px;
+       }
+}
+@media screen and (max-width : 608px){
+       .heading{
+              font-size: 2.7rem;
+       }
+}
+@media screen and (max-width : 548px){
+       .text{
+              font-size: 1.1rem;
+       }
+       .image1{
+              top: -150px;
+       }
+}
+@media screen and (max-width : 409px){
+       .heading{
+              font-size: 2.5rem;
+       }
+       .text{
+              font-size: 1rem;
+       }
+       .image1{
+              top: -130px;
+       }
+}
+@media screen and (max-width : 362px){
+       .heading{
+              font-size: 2.3rem;
+       }
+       .text{
+              font-size: 0.9rem;
+       }
+       .image1{
+              top: -90px;
+       }
+}
+@media screen and (max-width :335px) {
+       .image1{
+              top: -10px;
+       }
+}

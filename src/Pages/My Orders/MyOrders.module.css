@@ -1,0 +1,246 @@
+.bodyMain{
+       width: 60%;
+       margin: 80px auto 50vh auto;
+       overflow-x: hidden;
+       /* border: 2px solid red; */
+}
+.spinnerDiv{
+       /* border: 2px solid red; */
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       top: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: black;
+}
+.cartHead{
+       font-size: 3rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 700;
+       border-bottom: 1.6px solid rgba(0, 0, 0, 0.208);
+       height: 120px;
+       color:rgba(19, 185, 185, 0.733);
+}
+.noCartMargin{
+       display: none;
+}
+.cartList{
+       display: flex;
+       flex-direction: column;
+       margin-top: 40px;
+       width: 100%;
+}
+.eachItem{
+       display: flex;
+       justify-content: space-between;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.208);
+       height: 160px;
+       align-items: center;
+}
+.eachItem:last-child{
+       border-bottom: none;
+}
+.productNameDiv{
+       /* border: 2px solid green; */
+       width: 30%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       color: black;
+}
+.itemImgDiv{
+       width: 40%;
+       /* border: 2px solid red; */
+}
+.itemImg{
+       width: 100%;
+}
+.itemTitle{
+       font-size: 1.5rem;
+       width: 50%;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+       /* border: 2px solid red; */
+}
+.eachQuantity{
+       font-size: 1.1rem;
+       font-family: "Inter",sans-serif;
+       font-weight: 600;
+}
+.productQuantityBtn{
+       width: 80px;
+       /* border: 2px solid red; */
+       height: 17%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+}
+.QtyNumber{
+       /* font-family: "Inter",sans-serif; */
+       font-size: 1rem;
+       font-weight: 400;
+}
+.status{
+       font-size: 1.1rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 700;
+}
+.pending{
+       font-size: 1rem;
+       font-weight: 700;
+       color:rgba(192, 14, 14, 0.673);
+}
+.totalPrice{
+       font-size: 1.2rem;
+       font-family: "Inter",sans-serif;
+       font-weight: 700;
+}
+.continueShopping{
+       /* border: 2px solid red; */
+       text-align: end;
+       font-size: 1.2rem;
+       font-family: 'Inter',sans-serif;
+       color:rgb(14, 173, 173);
+       font-weight: 600;
+}
+.emptyCartImgDiv{
+       margin-top: 100px;
+       /* border: 2px solid red; */
+}
+.emptyCartImg{
+       display: block;
+       margin: auto;
+}
+.emptyCartText{
+       text-align: center;
+       font-family: 'kalam',cursive;
+}
+.emptyCartBtn{
+       display: block;
+       width: 200px;
+       height: 49px;
+       margin: 10px auto 0px auto;
+       font-size: 1.1rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 400;
+       outline: none;
+       border: none;
+       background-color: rgba(17, 184, 184, 0.768);
+       color: white;
+       border-radius: 25px;
+       transition: 0.3s;
+}
+.emptyCartBtn:hover{
+       background-color: rgba(14, 147, 147, 0.768);
+}
+@media screen and (max-width :1270px) {
+       .bodyMain{
+              width: 70%;
+       }
+}
+@media screen and (max-width :1060px){
+       .bodyMain{
+              width: 80%;
+       }
+}
+@media screen and (max-width : 916px){
+       .bodyMain{
+              width: 90%;
+       }
+}
+@media screen and (max-width : 809px){
+       .bodyMain{
+              width: 95%;
+       }
+}
+@media screen and (max-width :765px){
+       .itemTitle{
+              font-size: 1rem;
+       }
+       .eachItem{
+              height: 140px;
+       }
+}
+@media screen and (max-width : 621px){
+       .totalPrice{
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width : 597px){
+       .status{
+              font-size: 1rem;
+       }
+       .pending{
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width : 580px){
+       .Delivery{
+              display: none;
+       }
+}
+@media screen and (max-width : 531px){
+       .emptyCartText{
+              font-size: 1.3rem;
+       }
+}
+@media screen and (max-width : 510px){
+       .eachQuantity{
+              margin-left: 20px;
+       }
+}
+@media screen and (max-width : 466px){
+       .eachQuantity{
+              margin-left: 25px;
+       }
+}
+@media screen and (max-width : 451px){
+       .totalPrice{
+              display: none;
+       }
+}
+@media screen and (max-width :355px){
+       .eachQuantity{
+              margin-left: 35px;
+       }
+       .cartHead{
+              font-size: 2.5rem;
+       }
+       .emptyCartText{
+              font-size: 1.1rem;
+       }
+}
+@media screen and (max-width : 337px){
+       .itemTitle{
+              font-size: 0.9rem;
+       }
+       .emptyCartBtn{
+              width: 170px;
+              height: 49px;
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width : 326px){
+       .Qty{
+              display: none;
+       }
+}
+@media screen and (max-width : 293px) {
+       .emptyCartText{
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width : 277px) {
+       .eachQuantity{
+              margin-left: 40px;
+       }
+}
+@media screen and (max-width : 270px){
+       .QtyNumber{
+              display: none;
+       }
+}

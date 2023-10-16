@@ -1,0 +1,903 @@
+.EachProduct{
+       overflow-x: hidden;
+       background-color: rgba(171, 166, 166, 0.048);
+}
+.spinnerDiv{
+       /* border: 2px solid green; */
+       width: 100%;
+       height: 100%;
+       top: 0;
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       z-index: 100;
+       background-color: rgb(0, 0, 0)!important;
+}
+.body1{
+       width: 100%;
+       height: 400px;
+       overflow: hidden;
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+.img{
+       position: absolute;
+       width: 100%;
+       top: -150px;
+}
+.bannerTag{
+       z-index: 1;
+       width: 95%;
+       margin: auto;
+       position: absolute;
+       color: white;
+       top: 40%;
+       /* border: 2px solid red; */
+       text-align: center;
+}
+.bannerTag h1{
+       font-family: 'Inter',sans-serif;
+       font-size: 3rem;
+       font-weight: 300;
+       letter-spacing: 0.3rem;
+}
+.body2{
+       /* border: 2px solid red; */
+       width: 90%;
+       margin: 70px auto 0 auto;
+       height: 640px;
+       display: flex;
+}
+.product{
+       /* border: 2px solid pink; */
+       width: 80%;
+       display: flex;
+       justify-content: space-between;
+}
+.productImg{
+       /* border: 5px solid red; */
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 45%;
+       /* background-color: white; */
+}
+.details{
+       width: 50%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       /* border: 2px solid black; */
+}
+.mainImgDiv{
+       height: 500px;
+       /* border: 4px solid grey; */
+       overflow: hidden; 
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: white;
+}
+.subImgDiv{
+       /* border: 1px solid yellow; */
+       /* height: 20%; */
+       display: flex;
+       justify-content: space-between;
+}
+.headMainImg{
+       transition: 0.7s;
+       width: 100%;
+}
+.headMainImg:hover{
+       transform: scale(1.07);
+}
+.subImgInsideDiv{
+       width : 25%;
+       /* border: 5px solid hotpink; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+.subImg{
+       width : 100%;
+}
+.subImg:hover{
+       cursor: pointer;
+}
+.titleDiv{
+       border-bottom: 2px solid rgba(0, 0, 0, 0.159);
+       height: 180px;
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+       align-items: flex-start;
+}
+.shortDes{
+       font-family: 'Inter',sans-serif;
+       font-size: 0.95rem;
+       color:rgba(0, 0, 0, 0.463);
+       font-weight: 500;
+       line-height: 22px;
+}
+.readMore{
+       color: rgba(21, 147, 147, 0.849);
+       font-weight: 700;
+       cursor: pointer;
+}
+.readMore:hover{
+       color:rgba(19, 97, 97, 0.849);
+}
+.title{
+       font-size: 2.7rem;
+       letter-spacing: 0.02rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 500;
+       color: rgb(0, 0, 0);
+}
+.RatingSection{
+       border: 2px solid rgba(0, 0, 0, 0.068); 
+       display: flex;
+       /* justify-content: flex-start; */
+       align-items: center;
+       /* padding: 6px 6px; */
+}
+.ratingDiv{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       border-right: 2px solid rgba(0, 0, 0, 0.068); 
+       width: 60px;
+       padding: 7px 7px;
+}
+.ratingHead{
+       font-size: 1rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 700;
+}
+.star{
+       font-size: 1.1rem;
+       color: rgba(21, 147, 147, 0.849);
+}
+.totalReviews{
+       padding: 7px 7px;
+       font-size: 0.9rem;
+       font-weight: 500;
+       font-family: 'Inter',sans-serif;
+       color:rgba(0, 0, 0, 0.667);
+       /* border: 2px solid blanchedalmond; */
+}
+.priceTag{
+       margin-top: 10px;
+       height: 80px;
+       display: flex;
+       flex-direction: column;
+       gap: 13px;
+}
+.price{
+       font-size: 2.5rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+}
+.taxPara{
+       font-size: 1.1rem;
+       font-family: 'Inter',sans-serif;
+       color:rgba(21, 147, 147, 0.849);
+       font-weight: 700;
+       margin-left: 8px;
+}
+
+.tags{
+       margin-top: 50px;
+       /* border: 1px solid green; */
+}
+.tagList{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       height: 200px;
+}
+.tagList li{
+       font-weight: 800;
+}
+.tagHead{
+       font-size: 1.2rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+       color: rgba(0, 0, 0, 0.805);
+       letter-spacing: 0.05rem;
+}
+.tagAns{
+       font-size: 1.1rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+       letter-spacing: 0.02rem;
+       color: rgba(0, 0, 0, 0.619);
+}
+.inStock{
+       color: rgb(17, 174, 17);
+       /* border: 2px solid red; */
+}
+.tick{
+       font-size: 1.4rem;
+}
+.btn{
+       display: block;
+       width: 260px;
+       margin-top: 40px;
+       height: 55px;
+       border-radius: 50px;
+       font-size: 1.4rem;
+       letter-spacing: 0.09rem;
+       outline: none;
+       border: none;
+       font-weight: 500;
+       /* background-color: rgba(14, 183, 183, 0.441); */
+       transition: all 0.2s ease-in-out;
+       cursor: pointer;
+       background-color: rgba(20, 208, 208, 0.488);
+       /* background-color: rgba(223, 217, 217, 0.536); */
+}
+.btn:hover{
+       /* background-color: rgba(18, 195, 195, 0.54); */
+       background-color: rgba(17, 165, 165, 0.747);
+}
+.cartBtn{
+       width: 200px;
+       margin-top: 40px;
+       height: 55px;
+       /* border: 2px solid red; */
+       display: flex;
+       justify-content: flex-start;
+       align-items:center;
+       gap: 5%;
+       font-family: 'Inter',sans-serif;
+       font-weight: 700;
+       font-size: 1.5rem;
+}
+.plusBtn,.minusBtn{
+       width: 25%;
+       height: 80%;
+       font-weight: 100;
+       font-size: 1.5rem;
+       display: flex;
+       justify-content: center;
+       align-items:center ;
+       cursor: pointer;
+       background-color: rgba(20, 186, 186, 0.488);
+       outline: none;
+       border: none;
+       border-radius: 10px;
+}
+.plusBtn:hover,.minusBtn:hover{
+       background-color: rgba(19, 161, 161, 0.488);
+}
+.cartQuantity{
+       width: 25%;
+       /* border: 1.5px solid rgba(0, 0, 0, 0.629); */
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 10px;
+}
+.sideBar{
+       /* border: 2px solid green; */
+       width: 20%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+}
+.custoFeatureDiv{
+       /* border: 2px solid red; */
+       width: 70%;
+       margin: auto;
+}
+.featureList{
+       /* height: 250px; */
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+}
+.featureList li{
+       display: flex;
+       gap: 15px;
+       justify-content: center;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.114);
+       padding: 30px 0;
+}
+.featureList li:first-child{
+       padding-top: 0;
+}
+.featureList li:last-child{
+       border-bottom: none;
+}
+.featureList img{
+       width: 23%;
+}
+.featureList h1{
+       /* border: 1px solid black; */
+       width: 110px;
+       font-family: 'Inter',sans-serif;
+       font-size: 1rem;
+       color: rgba(0, 0, 0, 0.505);
+       font-weight: 600;
+}
+.sideImg{
+       /* border: 2px solid red; */
+       height:206px;
+       margin-top: 20px;
+       position: relative;
+       overflow-y: hidden;
+}
+.sideImg img{
+       width: 100%;
+       position: absolute;
+       top: -100px;
+}
+.spinnerDiv{
+       /* border: 2px solid red; */
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: rgba(171, 166, 166, 0.226);
+       /* top: 48vh;        */
+}
+.body3{
+       margin: 70px auto 0 auto;
+       width: 90%;
+       /* border: 2px solid red; */
+}
+.descriptionHeader{
+       font-family: 'Inter',sans-serif;
+       font-size: 1.8rem;
+       font-weight: 600;
+       position: relative;
+       color:rgba(21, 147, 147, 0.849);
+}
+.descriptionHeader::after {
+       content: '';
+       position: absolute;
+       top: 40px;
+       left:0;
+       right:0;
+       height: 1px; /* Adjust thickness here */
+       background-color: rgba(0, 0, 0, 0.247); /* Adjust color here */
+   }
+.descriptionPara{
+       margin-top: 20px;
+       font-family: 'Inter',sans-serif;
+       color: rgba(0, 0, 0, 0.755);
+       font-size: 1rem;
+       letter-spacing: 0.03rem;
+       font-weight: 500;
+}
+.descriptionEach{
+       margin: 0 0 8px 50px;
+}
+.descriptionEach:first-child{
+       margin: 0 0 20px 0;
+}
+.descriptionEach:last-child{
+       margin: 20px 0 0 0;
+}
+.reviewSection{
+       margin-top: 50px;
+       /* height: 455px; */
+       /* border: 2px solid red; */
+}
+.reviewPostReview{
+       display: flex;
+       justify-content: space-between;
+       margin-top: 30px;
+       /* border: 2px solid black; */
+}
+.reviewList{
+       display: flex;
+       /* margin-top: 35px; */
+       flex-direction: column;
+       /* border: 2px solid green; */
+       width:100%;
+
+       /* row-gap: 30px; */
+}
+.eachReview{
+       display: flex;
+       gap: 2%;
+       align-items:center;
+       min-height: 100px;
+       border-bottom : 1px dashed rgba(0, 0, 0, 0.271);
+}
+.eachReview:last-child{
+       border-bottom: none;
+}
+.ratingPeople{
+      background-color: rgba(20, 172, 172, 0.782);
+       display: flex;
+       width: 50px;
+       justify-content: space-evenly;
+       align-items: center;
+       /* border: 2px solid black; */
+}
+.ratingNumber{
+       font-family: 'Inter',sans-serif;
+       font-size: 1rem;
+       font-weight: 500;
+       color:white;
+}
+.starRatingIcon{
+       color: #ffff;
+}
+.ratingProfile{
+       width: 100%;
+       /* border: 2px solid red; */
+       row-gap: 10px;
+       display: flex;
+       flex-direction: column;
+}
+.reviewPara{
+       /* border: 2px solid black; */
+       /* line-height: 5rem; */
+       font-family: 'Inter',sans-serif;
+       letter-spacing: 0.06rem;
+       font-size: 1.2rem;
+       color:rgb(0, 0, 0);
+       font-weight: 400;
+       width: 100%;
+       /* margin: auto; */
+}
+.reviewUserName{
+       font-family: 'Inter',sans-serif;
+       color:rgba(0, 0, 0, 0.574);
+       font-weight: 400;
+       font-size: 0.9rem;
+       letter-spacing: 0.03rem;
+}
+.noReview{
+       font-family: 'Inter',sans-serif;
+       font-size: 1rem;
+       font-weight: 500;
+       color:rgba(0, 0, 0, 0.716);
+       width: 100%;
+       /* border: 2px solid red; */
+}
+.reviewPostSection{
+       /* border: 2px solid red; */
+       width: 40%;
+       position: relative;
+       overflow: hidden;
+       height: 300px;
+}
+.reviewPostSection:before {
+       content: "";
+       display: block;
+       position: absolute;
+       top:0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.429); 
+       z-index: 2; 
+}
+.LoginDiv{
+       /* border: 2px solid red; */
+       position: absolute;
+       width: 100%;
+       height: 35%;
+       top: 24%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+       z-index: 3;
+       color: white;
+}
+.LoginDivH1{
+       font-family: 'kalam',cursive;
+       font-size: 3rem;
+       font-weight: 300;
+}
+.LoginButton{
+       font-size: 1.3rem;
+       font-family: 'Inter',sans-serif;
+       font-weight: 600;
+       background-color: rgba(14, 183, 183, 0.749);
+       border: none;
+       outline: none;
+       padding: 15px 15px;
+       letter-spacing: 0.1rem;
+       color:white;
+       border-radius: 15px;
+       transition: 0.3s;
+       /* border: 2px solid red; */
+}
+.postReviewImg{
+       position: absolute;
+       z-index: 1;
+       left: -100px;
+}
+.LoginButton:hover{
+       background-color: rgba(12, 121, 121, 0.749);
+}
+@media screen and (max-width :496px){
+       .postReviewImg{
+              left: -180px;
+       }
+}
+@media screen and (max-width :1413px){
+       .sideImg img{
+              top: -80px;
+       }
+}
+@media screen and (max-width : 1298px) {
+       .reviewList{
+              width: 60%;
+       }
+       .postReviewImg{
+              left: -140px;
+       }
+       .noReview{
+              width: 60%;
+       }
+}
+@media screen and (max-width : 1267px){
+       .body2{
+              width : 95%;
+       }
+       .body3{
+              width: 95%;
+       }
+}
+@media screen and (max-width :1201px){
+       .sideBar{
+              display: none;
+       }
+       .body2{
+              width: 85%;
+       }
+       .body3{
+              width: 85%;
+       }
+       .product{
+              width: 100%;
+       }
+       .postReviewImg{
+              left: -160px;
+       }
+}
+@media screen and (max-width : 1148px){
+       .sideImg img{
+              top: -60px;
+       }
+}
+@media screen and (max-width :1146px){
+       .reviewPara{
+              font-size: 1.1rem;
+       }
+}
+@media screen and (max-width : 1114px){
+       .img{
+              top: -100px;
+       }
+}
+@media screen and (max-width : 1075px){
+       .body2{
+              width: 90%;
+       }
+       .body3{
+              width: 90%;
+       }
+       .details{
+              width: 53%;
+       }
+       .postReviewImg{
+              left: -170px;
+       }
+}
+@media screen and (max-width :998px){
+       .reviewPara{
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width :957px) {
+       .body2{
+              width: 95%;
+       }
+       .body3{
+              width: 95%;
+       }
+}
+@media screen and (max-width :941px){
+       .img{
+              top:-70px;
+       }
+}
+@media screen and (max-width : 906px){
+       .title{
+              font-size: 2.5rem;
+       }
+}
+@media screen and (max-width :870px){
+       .reviewPara{
+              letter-spacing: 0.03rem;
+       }
+}
+@media screen and (max-width : 840px){
+       .body2{
+              width: 90%;
+              height:fit-content;
+       }
+       .body3{
+              width: 90%;
+       }
+       .product{
+              flex-direction: column;
+              row-gap: 40px;
+       }
+       .mainImgDiv{
+              height: initial;
+       }
+       .productImg{
+              width: 100%;
+       }
+       .details{
+              width: 100%;
+       }
+       .subImgDiv{
+              margin-top: 25px;
+       }
+       .title{
+              font-size: 2.7rem;
+       }
+       .titleDiv{
+              height: 180px;
+              border: none;
+       }
+       .tagList{
+              height: 180px;
+       }
+       .descriptionEach{
+              font-size: 0.9rem;
+       }
+       .reviewPostReview{
+              /* border: 2px solid red; */
+              display: block;
+       }
+       .reviewList{
+              width: 100%;
+       }
+       .noReview{
+              width: 100%;
+       }
+       .reviewPara{
+              letter-spacing: 0.06rem;
+              font-size: 1.2rem;
+       }
+       .reviewPostSection{
+              margin-top: 30px;
+              height: 300px;
+              width: 100%;
+       }
+       .postReviewImg{
+              width: 120%;
+              left: -100px;
+              top: -80px;
+       }
+}
+@media screen and (max-width :814px){
+       .img{
+              top: -40px;
+       }
+}
+@media screen and (max-width : 795px){
+       .bannerTag h1{
+              font-size: 2.7rem;
+       }
+}
+@media screen and (max-width : 710px){
+       .img{
+              top: 0;
+       }
+}
+@media screen and (max-width :657px){
+       .LoginDivH1{
+              font-size: 2.7rem;
+       }
+       .LoginDiv{
+              top: 30%;
+       }
+}
+@media screen and (max-width :643px){
+       .reviewPara{
+              font-size: 1.1rem;
+       }
+}
+@media screen and (max-width : 622px){
+       .bannerTag h1{
+              font-size: 2.4rem;
+       }
+}
+@media screen and (max-width :600px){
+       .img{
+              width: 120%;
+              left: -70px;
+       }
+       .descriptionEach{
+              font-size: 0.8rem;
+       }
+}
+@media screen and (max-width :594px){
+       .reviewPara{
+              font-size: 1rem;
+       }
+}
+@media screen and (max-width :556px){
+       .reviewPara{
+              /* font-size: 1.2rem; */
+              /* letter-spacing: 0.06rem; */
+              width: 400px;
+              word-wrap: break-word;
+       }
+       .postReviewImg{
+              left: -70px;
+              top: -50px;
+       }
+}
+@media screen and (max-width : 537px){
+       .bannerTag h1{
+              font-size: 2.1rem;
+       }
+}
+@media screen and (max-width :511px){
+       .reviewPara{
+              width: 350px;
+       }
+}
+@media screen and (max-width : 504px){
+       .img{
+              width: 140%;
+              left:-100px;
+       }
+}
+@media screen and (max-width :507px){
+       .title{
+              font-size: 2.4rem;
+       }
+}
+@media screen and (max-width : 490px){
+       .postReviewImg{
+              top:-20px;
+       }
+}
+@media screen and (max-width :453px){
+       .title{
+              font-size: 2.2rem;
+       }
+       .price{
+              font-size: 2.2rem;
+       }
+       .reviewPara{
+              width: 300px;
+       }
+}
+@media screen and (max-width : 446px){
+       .img{
+              width: 160%;
+              left: -120px;
+       }
+       .postReviewImg{
+              top: 0px;
+       }
+}
+@media screen and (max-width :430px){
+       .titleDiv{
+              border: none;
+       }
+       .tags{
+              margin-top: 30px;
+       }
+       .priceTag{
+              margin-top: 15px;
+       }
+       .tagList{
+              height: 140px;
+       }
+}
+@media screen and (max-width : 422px){
+       .postReviewImg{
+              width: 150%;
+              left: -150px;
+       }
+}
+@media screen and (max-width :415px){
+       .title{
+              font-size: 2.1rem;
+       }
+       .price{
+              font-size: 2.1rem;
+       }
+}
+@media screen and (max-width : 409px){
+       .title{
+              font-size: 2rem;
+       }
+       .price{
+              font-size: 2rem;
+       }
+}
+@media screen and (max-width :398px){
+       .reviewPara{
+              width: 250px;
+       }
+}
+@media screen and (max-width :388px){
+       .img{
+              width: 180%;
+              left: -150px;
+       }
+}
+@media screen and (max-width : 378px){
+       .body2{
+              width: 95%;
+       }
+       .body3{
+              width: 95%;
+       }
+}
+@media screen and (max-width : 358px){
+       .title{
+              font-size: 1.7rem;
+       }
+       .price{
+              font-size: 1.7rem;
+       }
+}
+@media screen and (max-width : 335px){
+       .img{
+              width: 200%;
+              left: -150px;
+       }
+}
+@media screen and (max-width :323px){
+       .postReviewImg{
+              width: 170%;
+       }
+}
+@media screen and (max-width :320px){
+       .reviewPara{
+              width: 200px;
+       }
+}
+@media screen and (max-width :306px){
+       .body2{
+              width: 97%;
+       }
+       .body3{
+              width: 97%;
+       }
+}
+@media screen and (max-width : 300px) {
+       .title{
+              font-size: 1.5rem;
+       }
+       .price{
+              font-size: 1.5rem;
+       }
+}
+@media screen and (max-width : 277px){
+       .LoginDivH1{
+              font-size: 2.4rem;
+       }
+       .LoginButton{
+              padding: 12px 12px;
+       }
+       .postReviewImg{
+              width: 200%;
+              /* top: -120px; */
+       }
+}

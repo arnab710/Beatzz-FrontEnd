@@ -1,0 +1,306 @@
+.imgContainer{
+       width: 90%;
+       margin: 80px auto 0 auto;
+}
+.imgText{
+       position: absolute;
+       top: 22%;
+       left: 2%;
+       opacity: 0;
+       /* border: 2px solid red; */
+}
+.imgStyle{ 
+       height: 70vh;
+       background-image: linear-gradient(rgba(0, 0, 0, 0.337), rgba(0, 0, 0, 0.359)),url("https://res.cloudinary.com/dje9gn9we/image/upload/v1690052801/rakhmat-suwandi-GHo98eUct6I-unsplash_dyhaah.jpg");
+       background-size:cover;
+       background-repeat: no-repeat;
+       background-position: 65% 30%;
+       position: relative;
+}
+.imgHeadText{
+       font-family: 'Inter',sans-serif;
+       font-size: 3rem;
+       color: rgba(255, 255, 255, 0.747);
+       font-weight: 700;
+       /* border: 2px solid red; */
+       width: 35%;
+       letter-spacing: 0.5rem;
+       /* line-height: 3.5rem; */
+}
+.btn1,.btn2,.btn3 {
+       display: block;
+       /* border: 10px solid red; */
+       padding: 12px 30px; 
+       font-family: 'Inter', sans-serif;
+       font-size: 1.5rem;
+       font-weight: 500;
+       background-color: rgba(12, 201, 201, 0.573);
+       border: none;
+       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.341), 0px 10px 20px 0px rgba(0, 0, 0, 0.193);
+       color: rgba(255, 255, 255, 0.811);
+       cursor: pointer;
+       letter-spacing: 1px;
+       border-radius: 30px;
+       transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+       margin-top: 35px;
+}
+
+.btn1:hover,.btn2:hover,.btn3:hover {
+       background-color: rgba(16, 135, 135, 0.704);
+       transform: scale(1.01);
+}
+.imgSection{
+       display: flex;
+       justify-content: space-between;
+       margin-top: 25px;
+       /* border: 2px solid red; */
+}
+.imgLeft{
+       background-image: linear-gradient(rgba(0, 0, 0, 0.525), rgba(0, 0, 0, 0.481)),url("https://res.cloudinary.com/dje9gn9we/image/upload/v1690052801/alphacolor-VYE4K7BDa7c-unsplash_vdctuf.jpg");
+       height: 70vh;
+       width:49%;
+       background-size: cover;
+       background-repeat: no-repeat;
+       position: relative;
+}
+.imgRight{
+       background-image: linear-gradient(rgba(0, 0, 0, 0.403), rgba(0, 0, 0, 0.408)),url("https://res.cloudinary.com/dje9gn9we/image/upload/v1690052801/katie-gerrard-sSHzsuYBc9U-unsplash_m6yprq.jpg");
+       height: 70vh;
+       width:49%;
+       background-size: cover;
+       background-repeat: no-repeat;
+       position: relative;
+       background-position: 65%;
+}
+.SummerText{
+       position: absolute;
+       top: 25%;
+       left: 2%;
+       color: rgba(255, 255, 255, 0.636);
+       font-family: 'Inter',sans-serif;
+       width: 30%;
+       opacity: 0;
+       /* border: 2px solid red; */
+}
+.SummerText h1{
+       font-size: 3.3rem;  
+       font-weight: 700;
+       /* border: 2px solid red; */
+}
+.SummerText p{
+       font-size: 2rem;
+       font-weight: 500;
+       margin-top: 10px;
+}
+.visionText{
+       position: absolute;
+       top: 30%;
+       left: 2%;
+       color: rgba(255, 255, 255, 0.636);
+       font-family: 'Inter',sans-serif;
+       width: 45%;
+       opacity: 0;
+       /* border: 2px solid red; */
+}
+.visionText h1{
+       font-size: 2.6rem;  
+       font-weight: 700;
+       letter-spacing: 0.2rem;
+       font-family: 'Inter',sans-serif;
+       /* border: 2px solid red; */
+}
+@keyframes fadeInUp {
+       0% {
+         opacity: 0;
+         /* transform: translateY(40px); */
+       }
+       100% {
+         opacity: 1;
+         /* transform: translateY(0); */
+       }
+} 
+.show{
+       animation: fadeInUp 1s ease-out forwards;
+}
+@media screen and (max-width : 1619px) {
+       .imgRight{
+              background-position: 80%;
+       }
+}
+
+@media screen and (max-width :1511px){
+       .SummerText{
+              width: 40%;
+       }
+}
+@media screen and (max-width : 1498px){
+       .imgText{
+              top:10%;
+       }
+}
+
+@media screen and (max-width : 1464px){
+       .visionText{
+              width:55%;
+       }
+}
+@media screen and (max-width : 1200px){
+       .visionText{
+              width:65%;
+       }
+       .SummerText{
+              width: 50%;
+       }
+}   
+@media screen and (max-width :1011px){
+       .imgContainer{
+              width:95%;
+       }
+}
+@media screen and (max-width : 961px){
+       .visionText{
+              width:75%;
+       }
+}
+@media screen and (max-width : 863px){
+       .SummerText{
+              width: 60%;
+       }
+}
+@media screen and (max-width : 834px){
+       
+       .imgContainer{
+              width: 90%;
+       }
+       .imgSection{
+              display: block;
+              margin-top: 10px;
+       }
+       .imgLeft{
+              width:100%;
+       }
+       .imgRight{
+              margin-top: 10px;
+              width: 100%;
+       }
+       .imgHeadText{
+              font-size: 2.7rem;
+              width: 45%;
+       }
+       .SummerText h1, .visionText h1{
+              font-size: 2.4rem;
+       }
+       .visionText{
+              width: 45%;
+       }
+       .imgText,.SummerText,.visionText{
+              opacity: 1;
+       }
+       .show{
+              animation: none;
+       }
+}
+
+
+
+@media screen and (max-width : 730px){
+       .visionText{
+              width: 55%;
+       }
+       .visionText h1{
+              width: 90%;
+       }
+}
+@media screen and (max-width : 643px){
+       .imgHeadText{
+              width:55%;
+              font-size: 2.4rem;
+       }
+       .imgText{
+              top: 20%;
+       }
+}
+@media screen and (max-width : 594px){
+       .visionText{
+              width: 65%;
+       }
+}
+@media screen and (max-width : 504px){
+       .imgHeadText{
+              font-size: 2.3rem;
+              width: 65%;
+              letter-spacing: 0.3rem;
+       }
+       .btn3{
+              font-size: 1.4rem;
+       }
+       .visionText{
+              width: 75%;
+       }
+}
+@media screen and (max-width : 421px){
+       .visionText{
+              width: 85%;
+       }
+}
+@media screen and (max-width : 378px){
+       .SummerText{
+              width: 65%;
+       }
+       .imgHeadText{
+              font-size: 2.1rem;
+       }
+       .SummerText h1,.visionText h1{
+              font-size: 2.2rem;
+       }
+       .btn3{
+              letter-spacing: 0px;
+       }
+}
+@media screen and (max-width : 347px){
+       .btn3{
+              font-size: 1.2rem;
+       }
+       .SummerText{
+              width: 70%;
+       }
+}
+@media screen and (max-width : 325px){
+       .visionText h1{
+              width: 100%;
+       }
+       .SummerText{
+              width: 75%;
+       }
+       .SummerText h1{
+              font-size: 2.1rem;
+       }
+}
+
+@media screen and (max-width : 308px){
+       .btn3,.btn1,.btn2{
+              font-size: 1rem;
+       }
+       .SummerText p{
+              font-size: 1.7rem;
+       }
+}
+@media screen and (width = 912px){
+       .imgText{
+              top: 30%;
+       }
+       .imgLeft{
+              background-position: 40%;
+       }
+}
+@media screen and (width = 820px){
+       .imgText{
+              top: 30%;
+       }
+}
+
+@media screen and (width = 768px){
+       .imgText{
+              top: 30%;
+       }
+}

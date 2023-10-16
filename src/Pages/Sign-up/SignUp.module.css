@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@200&display=swap');
+
+.loginBackground {
+       background-image: url('/login-background.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 100vh;
+       width:100%;
+       background-position: 65%;
+       position: relative;
+       overflow: auto;
+}
+
+.loginBackground::before {
+       content: "";
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       position: fixed;
+       width:100%;
+       background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+       pointer-events: none;
+}
+
+.login {
+
+       /* border: 2px solid red; */
+       position: absolute;
+       top: 20%;
+       left: 35%;
+       color: white;
+       width: 30%;
+       font-family: 'Roboto', sans-serif;
+       animation: fadein 1s;
+}
+
+/* @keyframes for the fade-in effect */
+@keyframes fadein {
+       from {
+              opacity: 0;
+       }
+
+       to {
+              opacity: 1;
+       }
+}
+
+.loginText {
+       text-align: center;
+       margin-top: 1rem;
+       font-size: 2rem;
+       font-family: 'Ysabeau SC', sans-serif;
+       /* border: 2px solid red; */
+}
+
+.inputArea {
+       display: flex;
+       flex-direction: column;
+       row-gap: 1.3rem;
+       margin: 4rem auto 0rem auto;
+       width: 90%;
+       /* border: 2px solid pink; */
+}
+.buttonArea>button {
+       margin-top: 1rem;
+       width: 100%;
+       line-height: 2rem;
+       padding: 8px 0px 8px 0px;
+       /* border: 2px solid red; */
+       background-color: rgba(24, 239, 239, 0.316);
+       letter-spacing: 0.8px;
+       border-radius: 35px;
+       color: #ffffff;
+       font-weight: 400;
+       font-size: 1.5rem;
+       font-family: 'Roboto', sans-serif;
+       cursor: pointer;
+       transition: 100ms;
+       border: none;
+       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2), 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.buttonArea>button:hover {
+       background-color: rgba(16, 190, 190, 0.316);
+}
+.error{
+       color: rgb(213, 8, 8);
+       font-family: 'Roboto', sans-serif;
+       font-weight: 700;
+       /* border: 2px solid blue; */
+}
+.error span svg{
+       height: 13px;
+       width: 13px;
+       /* border: 2px solid red; */
+}
+
+.newJoinPara {
+       margin-top: 2rem;
+       margin-bottom : 2rem;
+       /* border: 2px solid red; */
+       display: flex;
+       justify-content: center;
+       gap: 0.5rem;
+       font-family: 'Roboto', sans-serif;
+}
+
+.newJoinPara>span {
+       font-size: 1rem;
+       letter-spacing: 0.5px;
+       color: #ffffffcc;
+
+}
+
+.loginLink {
+       font-size: 1.1rem;
+       color: rgba(0, 255, 255, 0.699);
+       transition: 100ms;
+
+}
+
+.loginLink:hover {
+       color: rgba(5, 146, 146, 0.699);
+}
+
+@media screen and (max-width :1157px) {
+
+       .inputArea{
+              width: 100%;
+       }
+       .loginText{
+              width: 100%;
+       }
+       .forgotPara{
+              width: 100%;
+       }
+       .newJoinPara{
+              width: 100%;
+       }
+}
+
+@media screen and (max-width :998px) {
+
+       .login{
+              width: 35%;
+              left: 32%;
+       }
+
+}
+@media screen and (max-width :928px) {
+
+       .login{
+              width: 40%;
+              left : 30%;
+       }
+}
+@media screen and (max-width :853px) {
+
+       .login{
+              width:45%;
+              left:28%;
+       }
+}
+@media screen and (max-width :775px) {
+
+       .login{
+              width:50%;
+              left:26%;
+       }
+}
+@media screen and (max-width :667px) {
+
+       .login{
+              width:55%;
+              left:24%;
+       }
+}
+@media screen and (max-width :565px) {
+
+       .login{
+              width:60%;
+              left:22%;
+       }
+}
+@media screen and (max-width :488px) {
+
+       .login{
+              width:65%;
+              left:20%;
+       }
+}
+@media screen and (max-width :464px) {
+
+       .login{
+              width:70%;
+              left:18%;
+       }
+}
+@media screen and (max-width :430px) {
+
+       .login{
+              width:75%;
+              left:16%;
+       }
+}
+@media screen and (max-width :404px) {
+
+       .login{
+              width:80%;
+              left:14%;
+       }
+}
+@media screen and (max-width :389px){
+       .login{
+              left:12%;
+       }
+}
+@media screen and (max-width :375px) {
+
+       .login{
+              width:83%;
+              left:9%;
+       }
+}
+
+@media screen and (max-width :361px){
+       .login{
+              width:86%;
+              left:7%;
+       }
+}
+@media screen and (max-width : 348px){
+       .login{
+              left: 5%;
+              width:90%;
+       }
+}
+@media screen and (max-width : 332px){
+       .login{
+              width: 95%;
+              left: 3%;
+       }
+       .input{
+              padding: 9px 0px 9px 0px;
+              font-size: 1rem;
+       }     
+}

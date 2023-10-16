@@ -1,0 +1,152 @@
+.card{
+       /* border: 2px solid red; */
+       background-color: white;
+       width: 267px;
+       height: 390px;
+       position: relative;
+}
+.icon{
+       font-size: 1.05rem;
+}
+.iconContainer{
+       position: absolute;
+       left: 83%;
+       top: 60%;
+       border: 2px solid rgba(13, 181, 206, 0.777);
+       border-radius: 30%;
+       padding: 5px;
+       /* color: rgba(17, 168, 168, 0.725); */
+}
+.imgContainer{
+       width : 70%;
+       height: 200px;
+       /* border: 2px solid red; */
+       margin: 20px auto 0 auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: white;
+       /* border: 2px solid red; */
+}
+.text{
+       margin-top: 20px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       /* border: 2px solid green; */
+       /* height: 130px; */
+}
+.textName{
+       font-size: 1.4rem;
+       letter-spacing: 0.1rem;
+       font-weight: 400;
+       color: black;
+       font-family: 'Inter',sans-serif;
+       /* border:2px solid red; */
+       text-align: center;
+}
+.textPara{
+       width: 100%;
+       height: 65px;
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+       /* border: 2px solid pink; */
+}
+.price{
+       font-size: 1rem;
+
+       font-family: 'Inter',sans-serif;
+       font-weight: 700;
+       color: rgb(0, 0, 0);
+       /* border: 2px solid orangered; */
+}
+.btn{
+       display: block;
+       width: 85%;
+       margin: 5px auto 0 auto;
+       height: 35px;
+       border-radius: 50px;
+       font-size: 1.3rem;
+       letter-spacing: 0.09rem;
+       outline: none;
+       border: none;
+       font-weight: 500;
+       /* background-color: rgba(14, 183, 183, 0.441); */
+       transition: all 0.2s ease-in-out;
+       cursor: pointer;
+       background-color: rgba(20, 208, 208, 0.488);
+       /* background-color: rgba(223, 217, 217, 0.536); */
+}
+.btn:hover{
+       /* background-color: rgba(18, 195, 195, 0.54); */
+       background-color: rgba(17, 165, 165, 0.747);
+}
+.quantityBtn{
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       width: 55%;
+       margin: 5px auto 0 auto;
+       height: 35px;
+       font-size: 1.3rem;
+       letter-spacing: 0.09rem;
+       font-weight: 700;
+       font-family: 'Inter',sans-serif;
+}
+.plusBtn,.minusBtn{
+       width: 25%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 5px;
+       outline: none;
+       border: none;
+       cursor: pointer;
+       background-color: rgba(17, 172, 172, 0.488);
+       font-size: 1.5rem;
+       font-family: 300;
+}
+.showQuantity{
+       /* border: 1.4px solid rgba(0, 0, 0, 0.416); */
+       width: 30%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       /* border-radius: 5px; */
+       
+}
+.plusBtn:hover ,.minusBtn:hover{
+       background-color: rgba(17, 165, 165, 0.747);
+}
+   
+.imgContainer .img1{
+       width: 100%;
+       display: block;
+}
+   
+.imgContainer .img2{
+       width: 100%;
+       display: none;
+}
+   
+.imgContainer:hover .img1{
+       display: none;
+}
+   
+.imgContainer:hover .img2{
+       display: block;
+}
+@media screen and (max-width : 578px){
+       .card{
+              width: 370px;
+              height:450px;
+       }
+       .imgContainer{
+              height: 260px;
+       }
+}

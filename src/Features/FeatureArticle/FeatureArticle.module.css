@@ -1,0 +1,201 @@
+.body2{
+       width: 85%;
+       margin: auto;
+       margin-top: 20px;
+       overflow-x: hidden;
+}
+.article{
+       opacity: 1;
+}
+.features{
+       display: flex;
+       margin-top: 80px;
+       justify-content: space-between;
+       column-gap: 5%;
+       /* border: 2px solid green; */
+}
+.leftFeature{
+       /* width:30%; */
+      /* background-color:red; */
+      display: flex;
+      opacity: 0;
+      flex-direction: column;
+      justify-content: space-between;
+      /* height: 150vh; */
+      /* border: 2px solid red; */
+      /* row-gap: 20px; */
+      height: 850px;
+      overflow: hidden; 
+}
+.leftFeature h1{
+       font-size: 3rem;
+       color:rgba(17, 166, 166, 0.873);
+       font-family: 'Inter', sans-serif;
+       font-weight: 600;
+       letter-spacing: 1px;
+}
+.leftFeature p{
+       font-size: 1.3rem;
+       color:rgba(0, 0, 1, 0.785);
+       font-family: 'Kalam', cursive;
+       font-weight: 500;
+       margin-top: 40px;
+}
+.rightFeature{
+       /* background-color: rgba(238, 229, 229, 0.263); */
+       margin-top: 80px;
+       display: flex;
+       flex-wrap: wrap;
+       min-width: 60%;
+       justify-content: space-between;
+       row-gap: 10px;
+       opacity: 0;
+       /* border: 2px solid red; */
+}
+.rightFeatureDiv{
+       /* border: 2px solid blue; */
+       width: 300px;
+       display: flex;
+       flex-direction: column;
+       row-gap: 10px;
+       align-items: center;
+}
+.rightFeatureDiv h1{
+       font-family: 'Inter', sans-serif;
+       color:rgba(9, 183, 192, 0.768);
+       font-size: 1.5rem;
+       font-weight: 600;
+       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.047);
+}
+.rightFeatureDiv img{
+       width:35%;
+       /* border: 2px solid red; */
+       padding: 15px;
+       box-shadow: 1px 4px 20px rgba(19, 173, 207, 0.336);
+       transition: all 0.3s ease;
+}
+.rightFeatureDiv img:hover {
+       transform: scale(1.03);
+       box-shadow: 1px 6px 24px rgba(19, 173, 207, 0.536);
+}
+.resHead{
+       margin-top: 80px;
+       display: none;
+       font-family: 'Inter',sans-serif;
+       font-size: 3rem;
+       font-weight: 500;
+       text-align: center;
+       color: rgba(14, 165, 165, 0.752);
+
+}
+.rightFeatureDiv p{
+       /* border: 2px solid red; */
+       text-align: center;
+       font-family: 'Inter', cursive;
+       font-weight: 500;
+       font-size: 1rem;
+       letter-spacing: 0.05rem;
+       color:rgba(0, 0, 0, 0.518);
+
+}
+.featureImg{
+       width: 80%;
+       margin: auto;
+       margin-top: 30px;
+       /* border: 2px solid black; */
+}
+@keyframes slideInFromLeft {
+       0% {
+         transform: translateX(-150px);
+         opacity: 0;
+       }
+       100% {
+         transform: translateX(0);
+         opacity: 1;
+       }
+     }
+     
+     @keyframes slideInFromRight {
+       0% {
+         transform: translateX(150px);
+         opacity: 0;
+       }
+       100% {
+         transform: translateX(0);
+         opacity: 1;
+       }
+     }
+     
+     .leftShow {
+       animation: slideInFromLeft 1.2s ease-out forwards;
+     }
+     
+     .rightShow {
+       animation: slideInFromRight 1.2s ease-out forwards;
+}
+
+@media screen and (max-width : 1185px){
+       .body2{
+              width: 90%;
+       }
+}
+@media screen and (max-width : 1118px){
+       .body2{
+              width: 95%;
+       }
+}
+ 
+@media screen and (max-width : 1070px){
+
+       .body2{
+              width: 75%;
+       }
+       .resHead{
+              display: block;
+       }
+       .leftFeature{
+              display: none;
+       }
+       .rightFeature{
+              justify-content: space-evenly;
+              row-gap: 20px;
+              opacity: 1;
+       }
+       .rightShow{
+              animation: none;
+       }
+       .features{
+              margin-top: 10px;
+       }
+}
+@media screen and (max-width : 889px) {
+       .body2{
+              width: 80%;
+       }
+}
+@media screen and (max-width : 830px) {
+       .body2{
+              width: 85%;
+       }
+}
+@media screen and (max-width : 716px){
+       .body2{
+              width:90%;
+       }
+}
+@media screen and (max-width : 672px){
+       .body2{
+              width:95%;
+       }
+}
+@media screen and (max-width : 640px){
+       .rightFeatureDiv{
+              height: 260px;
+              align-items: center;
+              justify-content: center;
+              row-gap: 15px;
+       }
+       .rightFeature{
+              row-gap: 5px;
+       }
+}            

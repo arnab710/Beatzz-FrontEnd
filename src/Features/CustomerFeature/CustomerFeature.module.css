@@ -1,0 +1,87 @@
+.body{
+       margin: 100px auto 0 auto;
+       width: 85%;
+       /* border: 2px solid red;  */
+}
+.container{
+       display: flex;
+       flex-direction: column;
+       row-gap: 15px;
+       align-items: center;
+       justify-content: center;
+       width: 280px;
+       /* border: 2px solid red; */
+}
+.topContainer{
+       display: flex;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+       row-gap: 25px;
+}
+.text{
+       display: flex;
+       flex-direction: column;
+       row-gap: 5px;
+       align-items: center;
+}
+.text h1{
+       font-family: 'Inter',sans-serif;
+       font-weight: 500;
+       /* letter-spacing: 0.1rem; */
+}
+.text p{
+       font-family: 'Inter',sans-serif;
+       color:rgba(0, 0, 0, 0.547);
+       /* font-weight: 500; */
+       
+}
+@media screen and (max-width : 1334px){
+       .body{
+              width: 95%;
+       }
+}
+@media screen and (max-width :1194px){
+       
+       .body{
+              width: 70%;
+       }
+       .container{
+              width: 400px;
+       }
+}
+@media screen and (max-width : 1145px){
+       .body{
+              width: 80%;
+       }
+}
+@media screen and (max-width : 1011px){
+       .body{
+              width: 90%;
+       }
+}
+@media screen and (max-width : 894px){
+       .body{
+              width: 95%;
+       }
+}
+@media screen and (max-width : 850px){
+       .container{
+              width: 370px;
+       }
+}
+@media screen and (max-width : 784px){
+       .container{
+              width: 330px;
+       }
+}
+@media screen and (max-width : 699px){
+       .container{
+              width: 280px
+       }
+}
+@media screen and (max-width : 593px){
+       .container{
+              width: 320px;
+              height: 150px;
+       }
+}
