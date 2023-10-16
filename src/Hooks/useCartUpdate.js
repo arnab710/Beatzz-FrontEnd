@@ -33,5 +33,6 @@ export const useCartUpdate = () => {
 			});
 		},
 	});
+
 	return { mutate, isLoading, data };
 };
