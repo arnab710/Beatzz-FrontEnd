@@ -1,4 +1,11 @@
 [[redirects]]
+from = "/api/v1/*" 
+to = "https://beatzz-backend.vercel.app/:splat"  
+status = 200
+force = true
+
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
