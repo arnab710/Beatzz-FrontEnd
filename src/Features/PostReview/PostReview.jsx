@@ -3,6 +3,7 @@ import StarPostRating from "../../Components/StarPostRating/StarPostRating";
 import style from "./PostReview.module.css";
 import usePostReview from "../../Hooks/usePostReview";
 import SmallSpinner from "../../Components/SmallSpinner/SmallSpinner";
+import toast from "react-hot-toast";
 
 // eslint-disable-next-line react/prop-types
 const PostReview = ({ id }) => {
@@ -15,6 +16,19 @@ const PostReview = ({ id }) => {
 	const handleSubmit = () => {
 		const review = textareaRef.current.value;
 		const rating = Number(userRating);
+
+		if (!review)
+			return toast.error("You Must Provide a Review Description", {
+				style: {
+					borderRadius: "10px",
+					background: "#333",
+					color: "#fff",
+					fontFamily: `"Inter",sans-serif`,
+					letterSpacing: `0.03rem`,
+					fontSize: `1.1rem`,
+				},
+			});
+
 		mutate({ rating, review });
 		textareaRef.current.value = "";
 		setResetRating((val) => !val);
