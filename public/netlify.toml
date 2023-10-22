@@ -1,6 +1,6 @@
 [[redirects]]
 from = "/api/v1/*" 
-to = "https://beatzz-backend.vercel.app/:splat"  
+to = "https://beatzz-backend.vercel.app/api/ECOMMERCIAL710/v1/:splat"  
 status = 200
 force = true
 
